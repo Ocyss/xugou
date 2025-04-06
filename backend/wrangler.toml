@@ -3,14 +3,13 @@ main = "src/index.ts"
 compatibility_date = "2025-03-10"
 compatibility_flags = ["nodejs_compat"]
 
-# 添加定时触发器，每分钟执行一次监控检查
 [triggers]
-crons = ["* * * * *"]
+crons = ["*/5 * * * *"]
 
 [[d1_databases]]
 binding = "DB"
 database_name = "xugou_db"
-database_id = "32a2ca5f-3a77-4b08-965e-804612557880"
+database_id = "4ff9c13e-35a0-4520-b673-3396d5203b28"
 
 [version_metadata]
 binding = "CF_VERSION_METADATA"
